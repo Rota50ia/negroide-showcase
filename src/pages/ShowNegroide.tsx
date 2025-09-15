@@ -329,7 +329,7 @@ export default function ShowNegroidePage() {
       }} viewport={{
         once: true
       }} className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Repertório Oficial</h2>
+          <h2 className="text-4xl font-bold mb-4">Algumas Músicas do Repertório do Show</h2>
           <p className="text-xl text-muted-foreground">Uma seleção cuidadosa de composições autorais e releituras</p>
         </motion.div>
 
