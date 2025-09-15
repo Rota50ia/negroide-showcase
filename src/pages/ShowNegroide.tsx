@@ -9,7 +9,7 @@ import { Phone, MapPin, Calendar, PlayCircle, Ticket, Music, Users, Drum, Instag
 import edilsonPhoto from "@/assets/edilson-morais.jpg";
 import luizChaffinPhoto from "@/assets/luiz-chaffin.jpg";
 import luizClimacoPhoto from "@/assets/luiz-climaco.jpg";
-import heroImage from "@/assets/hero-edilson.png";
+import heroImage from "@/assets/hero-percussion.jpg";
 const nav = [{
   href: "#ingressos",
   label: "Ingressos"
@@ -297,7 +297,7 @@ export default function ShowNegroidePage() {
                 <p>
                   Com <span className="text-primary">35 anos de experiência</span> nacional e internacional, 
                   Edilson traz ao palco uma performance que transcende fronteiras musicais, explorando 
-                  ritmos afro-brasileiros e latinos.
+                  ritmos afro-brasileiros, caribenhos e latinos.
                 </p>
                 <p>
                   Acompanhado por uma banda excepcional, o espetáculo promete uma jornada musical 
@@ -306,12 +306,7 @@ export default function ShowNegroidePage() {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-8">
-              <Stat title="35 anos" subtitle="de carreira musical" />
-              <Stat title="9 músicas" subtitle="no repertório oficial" />
-              <Stat title="3 artistas" subtitle="excepcionais no palco" />
-              <Stat title="1 noite" subtitle="inesquecível" />
-            </div>
+            
           </motion.div>
         </div>
       </section>
