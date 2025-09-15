@@ -9,7 +9,7 @@ import { Phone, MapPin, Calendar, PlayCircle, Ticket, Music, Users, Drum, Instag
 import edilsonPhoto from "@/assets/edilson-morais.jpg";
 import luizChaffinPhoto from "@/assets/luiz-chaffin.jpg";
 import luizClimacoPhoto from "@/assets/luiz-climaco.jpg";
-import heroImage from "@/assets/hero-percussion.jpg";
+import heroImage from "@/assets/hero-edilson.png";
 const nav = [{
   href: "#ingressos",
   label: "Ingressos"
