@@ -504,14 +504,20 @@ export default function ShowNegroidePage() {
               <div>
                 <h3 className="text-2xl font-bold mb-4">Siga nas Redes</h3>
                 <div className="flex gap-4">
-                  <Button variant="outline" size="icon" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                    <Instagram className="h-5 w-5" />
+                  <Button variant="outline" size="icon" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground" asChild>
+                    <a href="https://www.instagram.com/edilsonmoraisperc?igsh=MTFxNTR2bmhsbHR0eQ==" target="_blank" rel="noopener noreferrer">
+                      <Instagram className="h-5 w-5" />
+                    </a>
                   </Button>
-                  <Button variant="outline" size="icon" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                    <Youtube className="h-5 w-5" />
+                  <Button variant="outline" size="icon" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground" asChild>
+                    <a href="https://www.youtube.com/@edilsonmoraisperc" target="_blank" rel="noopener noreferrer">
+                      <Youtube className="h-5 w-5" />
+                    </a>
                   </Button>
-                  <Button variant="outline" size="icon" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                    <Mail className="h-5 w-5" />
+                  <Button variant="outline" size="icon" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground" asChild>
+                    <a href="mailto:edilsomdil@gmail.com">
+                      <Mail className="h-5 w-5" />
+                    </a>
                   </Button>
                 </div>
               </div>
