@@ -10,19 +10,27 @@ import edilsonPhoto from "@/assets/edilson-morais.jpg";
 import luizChaffinPhoto from "@/assets/luiz-chaffin.jpg";
 import luizClimacoPhoto from "@/assets/luiz-climaco.jpg";
 import heroImage from "@/assets/hero-percussion.jpg";
-
-const nav = [
-  { href: "#ingressos", label: "Ingressos" },
-  { href: "#sobre", label: "Sobre" },
-  { href: "#repertorio", label: "Repertório" },
-  { href: "#banda", label: "Banda" },
-  { href: "#midia", label: "Mídia" },
-  { href: "#contato", label: "Contato" },
-];
-
+const nav = [{
+  href: "#ingressos",
+  label: "Ingressos"
+}, {
+  href: "#sobre",
+  label: "Sobre"
+}, {
+  href: "#repertorio",
+  label: "Repertório"
+}, {
+  href: "#banda",
+  label: "Banda"
+}, {
+  href: "#midia",
+  label: "Mídia"
+}, {
+  href: "#contato",
+  label: "Contato"
+}];
 export default function ShowNegroidePage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  
   const date = "Sábado, 22 de Novembro de 2025";
   const time = "20h30";
   const city = "Recife, PE";
@@ -33,183 +41,187 @@ export default function ShowNegroidePage() {
   const email = "contato@negroide.show";
   const insta = "https://instagram.com/sua-pagina";
   const youtube = "https://youtube.com/@seucanal";
-
-  const repertoire = [
-    { title: "Negróide", authors: "Edilson Morais e Bruno Rejan", duration: "4:01 min", url: "https://youtu.be/2TaJgZ1Dn5M" },
-    { title: "Stasiant", authors: "Edilson Morais", duration: "3:21 min", url: "https://youtu.be/v3smkvUH6Oo" },
-    { title: "Samba 1", authors: "Henrique Reis", duration: "3:26 min", url: "https://youtu.be/A1C1FsSzuP4" },
-    { title: "Tudo em 5", authors: "Pedro Braga", duration: "5:09 min", url: "https://youtu.be/RxBsJwYUGpU" },
-    { title: "Curupira Pirou", authors: "Marcos Suzano e Lenine", duration: "5:48 min", url: "https://youtu.be/jHm_pwSrkdY" },
-    { title: "Carlito Marron", authors: "Carlinhos Brown", duration: "6:14 min", url: "https://youtu.be/Q_AS1KL26Cw" },
-    { title: "Carimbó Marajoara", authors: "Dorivã Borges", duration: "5:10 min", url: "https://youtu.be/hsnNsN6gTCI" },
-    { title: "Lendas da Mata", authors: "João Martins", duration: "2:50 min", url: "https://youtube.com/shorts/jRlaqtzIvZg" },
-    { title: "Oye Como Vá & Guajira", authors: "Tito Puente / D. Brown / José Chepitó Areas / Rico Reyes", duration: "6:40 min", url: "https://youtu.be/IFerUpZ91p8" },
-  ];
-
-  const band = [
-    { 
-      name: "Edilson Morais", 
-      role: "Percussão, Vocal / Direção Musical", 
-      highlight: "35 anos de carreira nacional e internacional.",
-      photo: edilsonPhoto
-    },
-    { 
-      name: "Luiz Chaffin", 
-      role: "Guitarra, Cavaco e Bandolim", 
-      highlight: "Versatilidade e riqueza melódica.",
-      photo: luizChaffinPhoto
-    },
-    { 
-      name: "Luiz Clímaco", 
-      role: "Guitarra, Violão e Baixo", 
-      highlight: "Bases sólidas e harmonias refinadas.",
-      photo: luizClimacoPhoto
-    },
-  ];
-
-  const ticketTiers = [
-    { title: "Pista", price: "R$ 80", note: "Entrada geral" },
-    { title: "Camarote", price: "R$ 120", note: "Área VIP com bar exclusivo" },
-    { title: "Mesa Premium", price: "R$ 200", note: "Mesa para 4 pessoas" },
-  ];
-
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-background via-muted to-background text-foreground">
+  const repertoire = [{
+    title: "Negróide",
+    authors: "Edilson Morais e Bruno Rejan",
+    duration: "4:01 min",
+    url: "https://youtu.be/2TaJgZ1Dn5M"
+  }, {
+    title: "Stasiant",
+    authors: "Edilson Morais",
+    duration: "3:21 min",
+    url: "https://youtu.be/v3smkvUH6Oo"
+  }, {
+    title: "Samba 1",
+    authors: "Henrique Reis",
+    duration: "3:26 min",
+    url: "https://youtu.be/A1C1FsSzuP4"
+  }, {
+    title: "Tudo em 5",
+    authors: "Pedro Braga",
+    duration: "5:09 min",
+    url: "https://youtu.be/RxBsJwYUGpU"
+  }, {
+    title: "Curupira Pirou",
+    authors: "Marcos Suzano e Lenine",
+    duration: "5:48 min",
+    url: "https://youtu.be/jHm_pwSrkdY"
+  }, {
+    title: "Carlito Marron",
+    authors: "Carlinhos Brown",
+    duration: "6:14 min",
+    url: "https://youtu.be/Q_AS1KL26Cw"
+  }, {
+    title: "Carimbó Marajoara",
+    authors: "Dorivã Borges",
+    duration: "5:10 min",
+    url: "https://youtu.be/hsnNsN6gTCI"
+  }, {
+    title: "Lendas da Mata",
+    authors: "João Martins",
+    duration: "2:50 min",
+    url: "https://youtube.com/shorts/jRlaqtzIvZg"
+  }, {
+    title: "Oye Como Vá & Guajira",
+    authors: "Tito Puente / D. Brown / José Chepitó Areas / Rico Reyes",
+    duration: "6:40 min",
+    url: "https://youtu.be/IFerUpZ91p8"
+  }];
+  const band = [{
+    name: "Edilson Morais",
+    role: "Percussão, Vocal / Direção Musical",
+    highlight: "35 anos de carreira nacional e internacional.",
+    photo: edilsonPhoto
+  }, {
+    name: "Luiz Chaffin",
+    role: "Guitarra, Cavaco e Bandolim",
+    highlight: "Versatilidade e riqueza melódica.",
+    photo: luizChaffinPhoto
+  }, {
+    name: "Luiz Clímaco",
+    role: "Guitarra, Violão e Baixo",
+    highlight: "Bases sólidas e harmonias refinadas.",
+    photo: luizClimacoPhoto
+  }];
+  const ticketTiers = [{
+    title: "Pista",
+    price: "R$ 80",
+    note: "Entrada geral"
+  }, {
+    title: "Camarote",
+    price: "R$ 120",
+    note: "Área VIP com bar exclusivo"
+  }, {
+    title: "Mesa Premium",
+    price: "R$ 200",
+    note: "Mesa para 4 pessoas"
+  }];
+  return <div className="min-h-screen bg-gradient-to-b from-background via-muted to-background text-foreground">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
-            <motion.div 
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              className="flex items-center gap-2"
-            >
+            <motion.div initial={{
+            opacity: 0,
+            x: -20
+          }} animate={{
+            opacity: 1,
+            x: 0
+          }} className="flex items-center gap-2">
               <Drum className="h-8 w-8 text-primary" />
               <span className="font-bold text-xl">NEGRÓIDE</span>
             </motion.div>
             
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
-              {nav.map((item) => (
-                <a 
-                  key={item.href} 
-                  href={item.href}
-                  className="text-muted-foreground hover:text-primary transition-smooth font-medium"
-                >
+              {nav.map(item => <a key={item.href} href={item.href} className="text-muted-foreground hover:text-primary transition-smooth font-medium">
                   {item.label}
-                </a>
-              ))}
+                </a>)}
               <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
                 Ingressos
               </Button>
             </div>
 
             {/* Mobile menu button */}
-            <Button
-              variant="ghost" 
-              size="sm"
-              className="md:hidden"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            >
+            <Button variant="ghost" size="sm" className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
               {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
           </div>
 
           {/* Mobile Navigation */}
-          {mobileMenuOpen && (
-            <motion.div 
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="md:hidden py-4 border-t border-border"
-            >
+          {mobileMenuOpen && <motion.div initial={{
+          opacity: 0,
+          y: -20
+        }} animate={{
+          opacity: 1,
+          y: 0
+        }} className="md:hidden py-4 border-t border-border">
               <div className="flex flex-col space-y-4">
-                {nav.map((item) => (
-                  <a 
-                    key={item.href} 
-                    href={item.href}
-                    className="text-muted-foreground hover:text-primary transition-smooth font-medium"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
+                {nav.map(item => <a key={item.href} href={item.href} className="text-muted-foreground hover:text-primary transition-smooth font-medium" onClick={() => setMobileMenuOpen(false)}>
                     {item.label}
-                  </a>
-                ))}
+                  </a>)}
                 <Button className="bg-primary text-primary-foreground hover:bg-primary/90 w-fit">
                   Ingressos
                 </Button>
               </div>
-            </motion.div>
-          )}
+            </motion.div>}
         </div>
       </nav>
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        >
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+        backgroundImage: `url(${heroImage})`
+      }}>
           <div className="absolute inset-0 bg-background/60" />
         </div>
         
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="space-y-8"
-          >
-            <motion.h1 
-              className="text-5xl md:text-7xl font-bold"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2, duration: 0.8 }}
-            >
+          <motion.div initial={{
+          opacity: 0,
+          y: 50
+        }} animate={{
+          opacity: 1,
+          y: 0
+        }} transition={{
+          duration: 0.8
+        }} className="space-y-8">
+            <motion.h1 className="text-5xl md:text-7xl font-bold" initial={{
+            opacity: 0,
+            scale: 0.8
+          }} animate={{
+            opacity: 1,
+            scale: 1
+          }} transition={{
+            delay: 0.2,
+            duration: 0.8
+          }}>
               SHOW <span className="text-primary">NEGRÓIDE</span>
             </motion.h1>
             
-            <motion.p 
-              className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.4 }}
-            >
+            <motion.p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto" initial={{
+            opacity: 0
+          }} animate={{
+            opacity: 1
+          }} transition={{
+            delay: 0.4
+          }}>
               com <span className="text-primary font-semibold">Edilson Morais e Banda</span>
             </motion.p>
 
-            <motion.div 
-              className="flex flex-col sm:flex-row items-center justify-center gap-4 text-lg"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6 }}
-            >
-              <div className="flex items-center gap-2">
-                <Calendar className="h-5 w-5 text-primary" />
-                <span>{date} • {time}</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <MapPin className="h-5 w-5 text-primary" />
-                <span>{venue}, {city}</span>
-              </div>
-            </motion.div>
+            
 
-            <motion.div
-              className="flex flex-col sm:flex-row gap-4 justify-center items-center"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.8 }}
-            >
-              <Button 
-                size="lg" 
-                className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6"
-              >
-                <Ticket className="mr-2 h-5 w-5" />
-                Comprar Ingressos
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground text-lg px-8 py-6"
-              >
+            <motion.div className="flex flex-col sm:flex-row gap-4 justify-center items-center" initial={{
+            opacity: 0,
+            y: 20
+          }} animate={{
+            opacity: 1,
+            y: 0
+          }} transition={{
+            delay: 0.8
+          }}>
+              
+              <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground text-lg px-8 py-6">
                 <PlayCircle className="mr-2 h-5 w-5" />
                 Assistir Prévia
               </Button>
@@ -220,40 +232,43 @@ export default function ShowNegroidePage() {
 
       {/* Ingressos */}
       <section id="ingressos" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
+        <motion.div initial={{
+        opacity: 0,
+        y: 50
+      }} whileInView={{
+        opacity: 1,
+        y: 0
+      }} viewport={{
+        once: true
+      }} className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Ingressos</h2>
           <p className="text-xl text-muted-foreground">Escolha seu lugar e garante sua experiência única</p>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {ticketTiers.map((tier, index) => (
-            <motion.div
-              key={tier.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.2 }}
-            >
+          {ticketTiers.map((tier, index) => <motion.div key={tier.title} initial={{
+          opacity: 0,
+          y: 30
+        }} whileInView={{
+          opacity: 1,
+          y: 0
+        }} viewport={{
+          once: true
+        }} transition={{
+          delay: index * 0.2
+        }}>
               <TicketTier {...tier} />
-            </motion.div>
-          ))}
+            </motion.div>)}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="text-center mt-12"
-        >
-          <Button 
-            size="lg"
-            className="bg-primary text-primary-foreground hover:bg-primary/90"
-          >
+        <motion.div initial={{
+        opacity: 0
+      }} whileInView={{
+        opacity: 1
+      }} viewport={{
+        once: true
+      }} className="text-center mt-12">
+          <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
             <ExternalLink className="mr-2 h-5 w-5" />
             Comprar Agora
           </Button>
@@ -263,12 +278,15 @@ export default function ShowNegroidePage() {
       {/* Sobre */}
       <section id="sobre" className="surface-elevated">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="grid lg:grid-cols-2 gap-16 items-center"
-          >
+          <motion.div initial={{
+          opacity: 0,
+          y: 50
+        }} whileInView={{
+          opacity: 1,
+          y: 0
+        }} viewport={{
+          once: true
+        }} className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-4xl font-bold mb-6">Uma Experiência Sonora Única</h2>
               <div className="space-y-6 text-lg text-muted-foreground">
@@ -300,25 +318,31 @@ export default function ShowNegroidePage() {
 
       {/* Repertório */}
       <section id="repertorio" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
+        <motion.div initial={{
+        opacity: 0,
+        y: 50
+      }} whileInView={{
+        opacity: 1,
+        y: 0
+      }} viewport={{
+        once: true
+      }} className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Repertório Oficial</h2>
           <p className="text-xl text-muted-foreground">Uma seleção cuidadosa de composições autorais e releituras</p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {repertoire.map((song, index) => (
-            <motion.div
-              key={song.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-            >
+          {repertoire.map((song, index) => <motion.div key={song.title} initial={{
+          opacity: 0,
+          y: 30
+        }} whileInView={{
+          opacity: 1,
+          y: 0
+        }} viewport={{
+          once: true
+        }} transition={{
+          delay: index * 0.1
+        }}>
               <Card className="bg-card border-border hover-glow transition-smooth cursor-pointer">
                 <CardHeader>
                   <CardTitle className="flex items-center justify-between">
@@ -330,51 +354,47 @@ export default function ShowNegroidePage() {
                 </CardHeader>
                 <CardContent className="text-sm text-muted-foreground space-y-3">
                   <p><strong>Autores:</strong> {song.authors}</p>
-                  <a 
-                    href={song.url} 
-                    target="_blank" 
-                    rel="noreferrer" 
-                    className="text-primary hover:text-primary/80 inline-flex items-center gap-2 transition-smooth"
-                  >
+                  <a href={song.url} target="_blank" rel="noreferrer" className="text-primary hover:text-primary/80 inline-flex items-center gap-2 transition-smooth">
                     <Youtube className="h-4 w-4" /> 
                     Assistir no YouTube
                   </a>
                 </CardContent>
               </Card>
-            </motion.div>
-          ))}
+            </motion.div>)}
         </div>
       </section>
 
       {/* Banda */}
       <section id="banda" className="surface-elevated">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
+          <motion.div initial={{
+          opacity: 0,
+          y: 50
+        }} whileInView={{
+          opacity: 1,
+          y: 0
+        }} viewport={{
+          once: true
+        }} className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">A Banda</h2>
             <p className="text-xl text-muted-foreground">Artistas excepcionais que darão vida a cada nota</p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {band.map((member, index) => (
-              <motion.div
-                key={member.name}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.2 }}
-              >
+            {band.map((member, index) => <motion.div key={member.name} initial={{
+            opacity: 0,
+            y: 30
+          }} whileInView={{
+            opacity: 1,
+            y: 0
+          }} viewport={{
+            once: true
+          }} transition={{
+            delay: index * 0.2
+          }}>
                 <Card className="bg-card border-border hover-glow transition-smooth overflow-hidden">
                   <div className="aspect-square w-full overflow-hidden">
-                    <img 
-                      src={member.photo} 
-                      alt={member.name}
-                      className="h-full w-full object-cover transition-transform hover:scale-105"
-                    />
+                    <img src={member.photo} alt={member.name} className="h-full w-full object-cover transition-transform hover:scale-105" />
                   </div>
                   <CardHeader>
                     <CardTitle className="text-xl">{member.name}</CardTitle>
@@ -384,33 +404,38 @@ export default function ShowNegroidePage() {
                     <p className="text-muted-foreground">{member.highlight}</p>
                   </CardContent>
                 </Card>
-              </motion.div>
-            ))}
+              </motion.div>)}
           </div>
         </div>
       </section>
 
       {/* Mídia */}
       <section id="midia" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
+        <motion.div initial={{
+        opacity: 0,
+        y: 50
+      }} whileInView={{
+        opacity: 1,
+        y: 0
+      }} viewport={{
+        once: true
+      }} className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Assista e Sinta a Vibração</h2>
           <p className="text-xl text-muted-foreground">Prévia do que você vai experimentar ao vivo</p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {repertoire.slice(0, 6).map((song, index) => (
-            <motion.div
-              key={song.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-            >
+          {repertoire.slice(0, 6).map((song, index) => <motion.div key={song.title} initial={{
+          opacity: 0,
+          y: 30
+        }} whileInView={{
+          opacity: 1,
+          y: 0
+        }} viewport={{
+          once: true
+        }} transition={{
+          delay: index * 0.1
+        }}>
               <Card className="bg-card border-border hover-glow transition-smooth overflow-hidden">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2 text-lg">
@@ -420,41 +445,40 @@ export default function ShowNegroidePage() {
                 </CardHeader>
                 <CardContent>
                   <div className="aspect-video w-full overflow-hidden rounded-lg border border-border">
-                    <iframe 
-                      className="h-full w-full" 
-                      src={song.url.replace("youtu.be/", "www.youtube.com/embed/").replace("youtube.com/shorts/", "www.youtube.com/embed/")} 
-                      title={song.title} 
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                      allowFullScreen 
-                    />
+                    <iframe className="h-full w-full" src={song.url.replace("youtu.be/", "www.youtube.com/embed/").replace("youtube.com/shorts/", "www.youtube.com/embed/")} title={song.title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                   </div>
                 </CardContent>
               </Card>
-            </motion.div>
-          ))}
+            </motion.div>)}
         </div>
       </section>
 
       {/* Contato */}
       <section id="contato" className="surface-elevated">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
+          <motion.div initial={{
+          opacity: 0,
+          y: 50
+        }} whileInView={{
+          opacity: 1,
+          y: 0
+        }} viewport={{
+          once: true
+        }} className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Entre em Contato</h2>
             <p className="text-xl text-muted-foreground">Para informações, parcerias e imprensa</p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-12">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="space-y-8"
-            >
+            <motion.div initial={{
+            opacity: 0,
+            x: -30
+          }} whileInView={{
+            opacity: 1,
+            x: 0
+          }} viewport={{
+            once: true
+          }} className="space-y-8">
               <div>
                 <h3 className="text-2xl font-bold mb-4">Informações do Evento</h3>
                 <div className="space-y-4">
@@ -491,11 +515,15 @@ export default function ShowNegroidePage() {
               </div>
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-            >
+            <motion.div initial={{
+            opacity: 0,
+            x: 30
+          }} whileInView={{
+            opacity: 1,
+            x: 0
+          }} viewport={{
+            once: true
+          }}>
               <Card className="bg-card border-border">
                 <CardHeader>
                   <CardTitle>Entre em Contato</CardTitle>
@@ -503,27 +531,15 @@ export default function ShowNegroidePage() {
                 <CardContent className="space-y-4">
                   <div>
                     <label className="text-sm font-medium">Nome</label>
-                    <input 
-                      type="text" 
-                      className="w-full mt-1 px-3 py-2 bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
-                      placeholder="Seu nome completo"
-                    />
+                    <input type="text" className="w-full mt-1 px-3 py-2 bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Seu nome completo" />
                   </div>
                   <div>
                     <label className="text-sm font-medium">Email</label>
-                    <input 
-                      type="email" 
-                      className="w-full mt-1 px-3 py-2 bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
-                      placeholder="seu@email.com"
-                    />
+                    <input type="email" className="w-full mt-1 px-3 py-2 bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary" placeholder="seu@email.com" />
                   </div>
                   <div>
                     <label className="text-sm font-medium">Mensagem</label>
-                    <textarea 
-                      rows={4}
-                      className="w-full mt-1 px-3 py-2 bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary resize-none"
-                      placeholder="Sua mensagem..."
-                    />
+                    <textarea rows={4} className="w-full mt-1 px-3 py-2 bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary resize-none" placeholder="Sua mensagem..." />
                   </div>
                   <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
                     <Mail className="mr-2 h-4 w-4" />
@@ -553,26 +569,35 @@ export default function ShowNegroidePage() {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 }
-
-function Stat({ title, subtitle }: { title: string; subtitle: string }) {
-  return (
-    <motion.div 
-      className="text-center"
-      whileHover={{ scale: 1.05 }}
-      transition={{ type: "spring", stiffness: 300 }}
-    >
+function Stat({
+  title,
+  subtitle
+}: {
+  title: string;
+  subtitle: string;
+}) {
+  return <motion.div className="text-center" whileHover={{
+    scale: 1.05
+  }} transition={{
+    type: "spring",
+    stiffness: 300
+  }}>
       <p className="text-primary font-bold text-2xl mb-1">{title}</p>
       <p className="text-muted-foreground text-sm">{subtitle}</p>
-    </motion.div>
-  );
+    </motion.div>;
 }
-
-function TicketTier({ title, price, note }: { title: string; price: string; note: string }) {
-  return (
-    <Card className="bg-card border-border hover-glow transition-smooth text-center">
+function TicketTier({
+  title,
+  price,
+  note
+}: {
+  title: string;
+  price: string;
+  note: string;
+}) {
+  return <Card className="bg-card border-border hover-glow transition-smooth text-center">
       <CardHeader>
         <CardTitle className="text-2xl">{title}</CardTitle>
       </CardHeader>
@@ -584,6 +609,5 @@ function TicketTier({ title, price, note }: { title: string; price: string; note
           Selecionar
         </Button>
       </CardContent>
-    </Card>
-  );
+    </Card>;
 }
