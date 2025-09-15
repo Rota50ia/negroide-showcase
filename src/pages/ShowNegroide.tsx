@@ -7,7 +7,7 @@ import { Phone, MapPin, Calendar, PlayCircle, Ticket, Music, Users, Drum, Instag
 
 // Import band member photos
 import edilsonPhoto from "@/assets/edilson-morais-new.jpg";
-import luizChaffinPhoto from "@/assets/luiz-chaffin.jpg";
+import luizChaffinPhoto from "@/assets/luiz-chaffin-new.jpg";
 import luizClimacoPhoto from "@/assets/luiz-climaco.jpg";
 import heroImage from "@/assets/hero-edilson.png";
 import experienciaImage from "@/assets/experiencia-sonora.png";
@@ -568,11 +568,14 @@ export default function ShowNegroidePage() {
               <Drum className="h-6 w-6 text-primary" />
               <span className="font-bold text-lg">SHOW NEGRÓIDE</span>
             </div>
-            <p className="text-muted-foreground mb-4">
-              com Edilson Morais e Banda • {date} • {venue}, {city}
+            <p className="text-muted-foreground mb-2">
+              Todos os direitos reservados – Edilson Morais 2025
+            </p>
+            <p className="text-muted-foreground mb-2">
+              Contato: edilsomdil@gmail.com
             </p>
             <p className="text-sm text-muted-foreground">
-              © 2025 Show Negróide. Todos os direitos reservados.
+              Desenvolvido por Edilson Morais
             </p>
           </div>
         </div>
