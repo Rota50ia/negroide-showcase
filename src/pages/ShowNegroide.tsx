@@ -131,14 +131,7 @@ export default function ShowNegroidePage() {
             </motion.div>
             
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-8">
-              {nav.map(item => <a key={item.href} href={item.href} className="text-muted-foreground hover:text-primary transition-smooth font-medium">
-                  {item.label}
-                </a>)}
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
-                Ingressos
-              </Button>
-            </div>
+            
 
             {/* Mobile menu button */}
             <Button variant="ghost" size="sm" className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -391,25 +384,7 @@ export default function ShowNegroidePage() {
           }} viewport={{
             once: true
           }} className="space-y-8">
-              <div>
-                <h3 className="text-2xl font-bold mb-4">Informações do Evento</h3>
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3">
-                    <Calendar className="h-5 w-5 text-primary" />
-                    <span>{date} • {time}</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <MapPin className="h-5 w-5 text-primary" />
-                    <span>{venue}, {city}</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Ticket className="h-5 w-5 text-primary" />
-                    <a href={ticketsUrl} className="text-primary hover:underline">
-                      Link para ingressos
-                    </a>
-                  </div>
-                </div>
-              </div>
+              
 
               <div>
                 <h3 className="text-2xl font-bold mb-4">Siga nas Redes</h3>
@@ -450,11 +425,9 @@ export default function ShowNegroidePage() {
                   
                   
                   
-                  <Button className="w-full bg-whatsapp text-whatsapp-foreground hover:bg-whatsapp/90" asChild>
-                    <a href="https://api.whatsapp.com/send/?phone=5562981221474&text=Olá+gostaria+de+saber+informações+sobre+o+*Show*+*negróide*" target="_blank" rel="noopener noreferrer">
-                      <Mail className="mr-2 h-4 w-4" />
-                      Enviar Mensagem
-                    </a>
+                  <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
+                    <Mail className="mr-2 h-4 w-4" />
+                    Enviar Mensagem
                   </Button>
                 </CardContent>
               </Card>
