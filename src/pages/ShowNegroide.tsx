@@ -13,6 +13,12 @@ import heroImage from "@/assets/hero-edilson.png";
 import experienciaImage from "@/assets/experiencia-sonora.png";
 import edilsonSobreImage from "@/assets/edilson-sobre.png";
 import pandeiroLogo from "@/assets/pandeiro-logo.png";
+
+// Import press material images
+import releaseEdilsonImage from "@/assets/release-edilson-morais.png";
+import negroideFoto1 from "@/assets/negroide-foto-1.png";
+import negroideFoto2 from "@/assets/negroide-foto-2.png";
+import negroideFoto3 from "@/assets/negroide-foto-3.png";
 const nav = [{
   href: "#ingressos",
   label: "Ingressos"
@@ -229,53 +235,6 @@ export default function ShowNegroidePage() {
         </div>
       </section>
 
-      {/* Sobre Edilson Morais */}
-      <section id="sobre-edilson" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24">
-        <motion.div 
-          initial={{ opacity: 0, y: 50 }} 
-          whileInView={{ opacity: 1, y: 0 }} 
-          viewport={{ once: true }} 
-          className="grid lg:grid-cols-2 gap-16 items-center"
-        >
-          <div className="flex justify-center lg:order-2">
-            <img 
-              src={edilsonSobreImage} 
-              alt="Edilson Morais tocando percussão em apresentação ao vivo" 
-              className="rounded-lg shadow-lg max-w-full h-auto"
-            />
-          </div>
-          
-          <div className="lg:order-1">
-            <h2 className="text-4xl font-bold mb-6">Sobre Edilson Morais</h2>
-            <div className="space-y-6 text-lg text-muted-foreground">
-              <p>
-                Edilson Morais é percussionista goiano. Sua trajetória inclui turnês por mais de 20 países, 
-                gravações para cinema e teatro, além de colaborações com importantes nomes da música brasileira.
-              </p>
-              <p>
-                Formado no Centro Cultural Gustav Ritter e com estudos em percussão erudita, música indiana, 
-                ritmos do leste europeu e candombe uruguaio, Edilson construiu uma linguagem musical única, 
-                que une tradição e inovação.
-              </p>
-              <p>
-                Ao longo da carreira, participou de festivais como o Vienna Jazz Festival, Hannover Expo 2000 
-                e Cumbre Tajín, e integrou projetos como Grupo Solo Brasil, Trio Mercosür Electropercusión, 
-                Goyá Eletro Duo e Com a Corda Toda. Gravou os DVDs Negróide (2013) e Percussão: Uma Outra Visão (2017), 
-                ambos aclamados pela crítica.
-              </p>
-              <p>
-                Nos últimos anos, destacou-se em turnês educativas, como o Educanto, que percorreu dezenas 
-                de cidades goianas, e na direção do Show Negróide, apresentado em festivais de grande relevância.
-              </p>
-              <p>
-                Edilson segue atuando como instrumentista, educador e diretor musical, consolidando-se como 
-                referência da percussão contemporânea e das raízes afro-brasileiras.
-              </p>
-            </div>
-          </div>
-        </motion.div>
-      </section>
-
       {/* Sobre */}
       <section id="sobre" className="surface-elevated">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24">
@@ -360,6 +319,53 @@ export default function ShowNegroidePage() {
         </div>
       </section>
 
+      {/* Sobre Edilson Morais */}
+      <section id="sobre-edilson" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24">
+        <motion.div 
+          initial={{ opacity: 0, y: 50 }} 
+          whileInView={{ opacity: 1, y: 0 }} 
+          viewport={{ once: true }} 
+          className="grid lg:grid-cols-2 gap-16 items-center"
+        >
+          <div className="flex justify-center lg:order-2">
+            <img 
+              src={edilsonSobreImage} 
+              alt="Edilson Morais tocando percussão em apresentação ao vivo" 
+              className="rounded-lg shadow-lg max-w-full h-auto"
+            />
+          </div>
+          
+          <div className="lg:order-1">
+            <h2 className="text-4xl font-bold mb-6">Sobre Edilson Morais</h2>
+            <div className="space-y-6 text-lg text-muted-foreground">
+              <p>
+                Edilson Morais é percussionista goiano. Sua trajetória inclui turnês por mais de 20 países, 
+                gravações para cinema e teatro, além de colaborações com importantes nomes da música brasileira.
+              </p>
+              <p>
+                Formado no Centro Cultural Gustav Ritter e com estudos em percussão erudita, música indiana, 
+                ritmos do leste europeu e candombe uruguaio, Edilson construiu uma linguagem musical única, 
+                que une tradição e inovação.
+              </p>
+              <p>
+                Ao longo da carreira, participou de festivais como o Vienna Jazz Festival, Hannover Expo 2000 
+                e Cumbre Tajín, e integrou projetos como Grupo Solo Brasil, Trio Mercosür Electropercusión, 
+                Goyá Eletro Duo e Com a Corda Toda. Gravou os DVDs Negróide (2013) e Percussão: Uma Outra Visão (2017), 
+                ambos aclamados pela crítica.
+              </p>
+              <p>
+                Nos últimos anos, destacou-se em turnês educativas, como o Educanto, que percorreu dezenas 
+                de cidades goianas, e na direção do Show Negróide, apresentado em festivais de grande relevância.
+              </p>
+              <p>
+                Edilson segue atuando como instrumentista, educador e diretor musical, consolidando-se como 
+                referência da percussão contemporânea e das raízes afro-brasileiras.
+              </p>
+            </div>
+          </div>
+        </motion.div>
+      </section>
+
       {/* Mídia */}
       <section id="midia" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24">
         <motion.div initial={{
@@ -407,6 +413,125 @@ export default function ShowNegroidePage() {
                 </CardContent>
               </Card>
             </motion.div>)}
+        </div>
+      </section>
+
+      {/* Material Imprensa */}
+      <section id="material-imprensa" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24">
+        <motion.div 
+          initial={{ opacity: 0, y: 50 }} 
+          whileInView={{ opacity: 1, y: 0 }} 
+          viewport={{ once: true }} 
+          className="text-center mb-16"
+        >
+          <h2 className="text-4xl font-bold mb-4">Material Imprensa</h2>
+          <p className="text-xl text-muted-foreground">Fotos e materiais promocionais para download</p>
+        </motion.div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }} 
+            whileInView={{ opacity: 1, y: 0 }} 
+            viewport={{ once: true }} 
+            transition={{ delay: 0 }}
+          >
+            <Card className="bg-card border-border hover-glow transition-smooth overflow-hidden">
+              <div className="aspect-square w-full overflow-hidden">
+                <img 
+                  src={releaseEdilsonImage} 
+                  alt="Release Edilson Morais - Material promocional" 
+                  className="h-full w-full object-cover transition-transform hover:scale-105" 
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-lg">Release Edilson Morais</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                  <ExternalLink className="mr-2 h-4 w-4" />
+                  Download
+                </Button>
+              </CardContent>
+            </Card>
+          </motion.div>
+
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }} 
+            whileInView={{ opacity: 1, y: 0 }} 
+            viewport={{ once: true }} 
+            transition={{ delay: 0.1 }}
+          >
+            <Card className="bg-card border-border hover-glow transition-smooth overflow-hidden">
+              <div className="aspect-square w-full overflow-hidden">
+                <img 
+                  src={negroideFoto1} 
+                  alt="Negróide foto 1 - Edilson Morais em apresentação" 
+                  className="h-full w-full object-cover transition-transform hover:scale-105" 
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-lg">Negróide Foto 1</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                  <ExternalLink className="mr-2 h-4 w-4" />
+                  Download
+                </Button>
+              </CardContent>
+            </Card>
+          </motion.div>
+
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }} 
+            whileInView={{ opacity: 1, y: 0 }} 
+            viewport={{ once: true }} 
+            transition={{ delay: 0.2 }}
+          >
+            <Card className="bg-card border-border hover-glow transition-smooth overflow-hidden">
+              <div className="aspect-square w-full overflow-hidden">
+                <img 
+                  src={negroideFoto2} 
+                  alt="Negróide foto 2 - Edilson Morais com terno branco" 
+                  className="h-full w-full object-cover transition-transform hover:scale-105" 
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-lg">Negróide Foto 2</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                  <ExternalLink className="mr-2 h-4 w-4" />
+                  Download
+                </Button>
+              </CardContent>
+            </Card>
+          </motion.div>
+
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }} 
+            whileInView={{ opacity: 1, y: 0 }} 
+            viewport={{ once: true }} 
+            transition={{ delay: 0.3 }}
+          >
+            <Card className="bg-card border-border hover-glow transition-smooth overflow-hidden">
+              <div className="aspect-square w-full overflow-hidden">
+                <img 
+                  src={negroideFoto3} 
+                  alt="Negróide foto 3 - Edilson Morais com pandeiro" 
+                  className="h-full w-full object-cover transition-transform hover:scale-105" 
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-lg">Negróide Foto 3</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                  <ExternalLink className="mr-2 h-4 w-4" />
+                  Download
+                </Button>
+              </CardContent>
+            </Card>
+          </motion.div>
         </div>
       </section>
 
