@@ -229,49 +229,7 @@ export default function ShowNegroidePage() {
       </section>
 
       {/* Ingressos */}
-      <section id="ingressos" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24">
-        <motion.div initial={{
-        opacity: 0,
-        y: 50
-      }} whileInView={{
-        opacity: 1,
-        y: 0
-      }} viewport={{
-        once: true
-      }} className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Ingressos</h2>
-          <p className="text-xl text-muted-foreground">Escolha seu lugar e garante sua experiência única</p>
-        </motion.div>
-
-        <div className="grid md:grid-cols-3 gap-8">
-          {ticketTiers.map((tier, index) => <motion.div key={tier.title} initial={{
-          opacity: 0,
-          y: 30
-        }} whileInView={{
-          opacity: 1,
-          y: 0
-        }} viewport={{
-          once: true
-        }} transition={{
-          delay: index * 0.2
-        }}>
-              <TicketTier {...tier} />
-            </motion.div>)}
-        </div>
-
-        <motion.div initial={{
-        opacity: 0
-      }} whileInView={{
-        opacity: 1
-      }} viewport={{
-        once: true
-      }} className="text-center mt-12">
-          <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-            <ExternalLink className="mr-2 h-5 w-5" />
-            Comprar Agora
-          </Button>
-        </motion.div>
-      </section>
+      
 
       {/* Sobre */}
       <section id="sobre" className="surface-elevated">
@@ -305,11 +263,7 @@ export default function ShowNegroidePage() {
             </div>
 
             <div className="flex justify-center">
-              <img 
-                src={experienciaImage} 
-                alt="Show Negróide em apresentação ao vivo" 
-                className="rounded-lg shadow-lg max-w-full h-auto"
-              />
+              <img src={experienciaImage} alt="Show Negróide em apresentação ao vivo" className="rounded-lg shadow-lg max-w-full h-auto" />
             </div>
           </motion.div>
         </div>
