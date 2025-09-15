@@ -12,6 +12,7 @@ import luizClimacoPhoto from "@/assets/luiz-climaco.jpg";
 import heroImage from "@/assets/hero-edilson.png";
 import experienciaImage from "@/assets/experiencia-sonora.png";
 import edilsonSobreImage from "@/assets/edilson-sobre.png";
+import pandeiroLogo from "@/assets/pandeiro-logo.png";
 const nav = [{
   href: "#ingressos",
   label: "Ingressos"
@@ -488,7 +489,11 @@ export default function ShowNegroidePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center">
             <div className="flex items-center justify-center gap-2 mb-4">
-              <Drum className="h-6 w-6 text-primary" />
+              <img 
+                src={pandeiroLogo} 
+                alt="Logo Show Negróide - Pandeiro" 
+                className="h-8 w-8"
+              />
               <span className="font-bold text-lg">SHOW NEGRÓIDE</span>
             </div>
             <p className="text-muted-foreground mb-2">
