@@ -297,7 +297,7 @@ export default function ShowNegroidePage() {
                 <p>
                   Com <span className="text-primary">35 anos de experiência</span> nacional e internacional, 
                   Edilson traz ao palco uma performance que transcende fronteiras musicais, explorando 
-                  ritmos afro-brasileiros, caribenhos e latinos.
+                  ritmos afro-brasileiros e latinos.
                 </p>
                 <p>
                   Acompanhado por uma banda excepcional, o espetáculo promete uma jornada musical 
