@@ -128,7 +128,11 @@ export default function ShowNegroidePage() {
             opacity: 1,
             x: 0
           }} className="flex items-center gap-2">
-              <Drum className="h-8 w-8 text-primary" />
+              <img 
+                src={pandeiroLogo} 
+                alt="Logo Show Negróide - Pandeiro" 
+                className="h-8 w-8"
+              />
               <span className="font-bold text-xl">NEGRÓIDE</span>
             </motion.div>
             
