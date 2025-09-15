@@ -450,9 +450,11 @@ export default function ShowNegroidePage() {
                   
                   
                   
-                  <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
-                    <Mail className="mr-2 h-4 w-4" />
-                    Enviar Mensagem
+                  <Button className="w-full bg-whatsapp text-whatsapp-foreground hover:bg-whatsapp/90" asChild>
+                    <a href="https://api.whatsapp.com/send/?phone=5562981221474&text=Olá+gostaria+de+saber+informações+sobre+o+*Show*+*negróide*" target="_blank" rel="noopener noreferrer">
+                      <Mail className="mr-2 h-4 w-4" />
+                      Enviar Mensagem
+                    </a>
                   </Button>
                 </CardContent>
               </Card>

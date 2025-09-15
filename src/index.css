@@ -42,6 +42,8 @@
     --amber-glow-soft: 45 56% 38%;
     --surface-elevated: 240 5.9% 10%;
     --surface-hover: 45 96% 58% / 0.1;
+    --whatsapp: 142 70% 49%;
+    --whatsapp-foreground: 0 0% 98%;
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
