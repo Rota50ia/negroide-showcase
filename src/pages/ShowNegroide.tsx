@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Phone, MapPin, Calendar, PlayCircle, Ticket, Music, Users, Drum, Instagram, Youtube, Mail, Menu, X, ExternalLink } from "lucide-react";
 
 // Import band member photos
-import edilsonPhoto from "@/assets/edilson-morais.jpg";
+import edilsonPhoto from "@/assets/edilson-morais-new.jpg";
 import luizChaffinPhoto from "@/assets/luiz-chaffin.jpg";
 import luizClimacoPhoto from "@/assets/luiz-climaco.jpg";
 import heroImage from "@/assets/hero-edilson.png";
