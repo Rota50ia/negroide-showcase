@@ -8,7 +8,7 @@ import { Phone, MapPin, Calendar, PlayCircle, Ticket, Music, Users, Drum, Instag
 // Import band member photos
 import edilsonPhoto from "@/assets/edilson-morais-new.jpg";
 import luizChaffinPhoto from "@/assets/luiz-chaffin-new.jpg";
-import luizClimacoPhoto from "@/assets/luiz-climaco.jpg";
+import luizClimacoPhoto from "@/assets/luiz-climaco-new.jpg";
 import heroImage from "@/assets/hero-edilson.png";
 import experienciaImage from "@/assets/experiencia-sonora.png";
 import edilsonSobreImage from "@/assets/edilson-sobre.png";
