@@ -18,9 +18,6 @@ const nav = [{
   href: "#sobre",
   label: "Sobre"
 }, {
-  href: "#repertorio",
-  label: "Repertório"
-}, {
   href: "#banda",
   label: "Banda"
 }, {
@@ -318,53 +315,6 @@ export default function ShowNegroidePage() {
         </div>
       </section>
 
-      {/* Repertório */}
-      <section id="repertorio" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24">
-        <motion.div initial={{
-        opacity: 0,
-        y: 50
-      }} whileInView={{
-        opacity: 1,
-        y: 0
-      }} viewport={{
-        once: true
-      }} className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Algumas Músicas do Repertório do Show</h2>
-          <p className="text-xl text-muted-foreground">Uma seleção cuidadosa de composições autorais e releituras</p>
-        </motion.div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {repertoire.map((song, index) => <motion.div key={song.title} initial={{
-          opacity: 0,
-          y: 30
-        }} whileInView={{
-          opacity: 1,
-          y: 0
-        }} viewport={{
-          once: true
-        }} transition={{
-          delay: index * 0.1
-        }}>
-              <Card className="bg-card border-border hover-glow transition-smooth cursor-pointer">
-                <CardHeader>
-                  <CardTitle className="flex items-center justify-between">
-                    <span>{song.title}</span>
-                    <Badge variant="secondary" className="bg-primary/20 text-primary border-primary/30">
-                      {song.duration}
-                    </Badge>
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="text-sm text-muted-foreground space-y-3">
-                  <p><strong>Autores:</strong> {song.authors}</p>
-                  <a href={song.url} target="_blank" rel="noreferrer" className="text-primary hover:text-primary/80 inline-flex items-center gap-2 transition-smooth">
-                    <Youtube className="h-4 w-4" /> 
-                    Assistir no YouTube
-                  </a>
-                </CardContent>
-              </Card>
-            </motion.div>)}
-        </div>
-      </section>
 
       {/* Banda */}
       <section id="banda" className="surface-elevated">
@@ -423,11 +373,11 @@ export default function ShowNegroidePage() {
         once: true
       }} className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Assista e Sinta a Vibração</h2>
-          <p className="text-xl text-muted-foreground">Prévia do que você vai experimentar ao vivo</p>
+          <p className="text-xl text-muted-foreground">Repertório completo do show - uma seleção de composições autorais e releituras</p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {repertoire.slice(0, 6).map((song, index) => <motion.div key={song.title} initial={{
+          {repertoire.map((song, index) => <motion.div key={song.title} initial={{
           opacity: 0,
           y: 30
         }} whileInView={{
@@ -440,12 +390,18 @@ export default function ShowNegroidePage() {
         }}>
               <Card className="bg-card border-border hover-glow transition-smooth overflow-hidden">
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-lg">
-                    <Youtube className="h-5 w-5 text-red-500" /> 
-                    {song.title}
+                  <CardTitle className="flex items-center justify-between gap-2 text-lg">
+                    <div className="flex items-center gap-2">
+                      <Youtube className="h-5 w-5 text-red-500" /> 
+                      {song.title}
+                    </div>
+                    <Badge variant="secondary" className="bg-primary/20 text-primary border-primary/30">
+                      {song.duration}
+                    </Badge>
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="space-y-3">
+                  <p className="text-sm text-muted-foreground"><strong>Autores:</strong> {song.authors}</p>
                   <div className="aspect-video w-full overflow-hidden rounded-lg border border-border">
                     <iframe className="h-full w-full" src={song.url.replace("youtu.be/", "www.youtube.com/embed/").replace("youtube.com/shorts/", "www.youtube.com/embed/")} title={song.title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                   </div>
