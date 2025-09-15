@@ -9,7 +9,8 @@ import { Phone, MapPin, Calendar, PlayCircle, Ticket, Music, Users, Drum, Instag
 import edilsonPhoto from "@/assets/edilson-morais.jpg";
 import luizChaffinPhoto from "@/assets/luiz-chaffin.jpg";
 import luizClimacoPhoto from "@/assets/luiz-climaco.jpg";
-import heroImage from "@/assets/hero-percussion.jpg";
+import heroImage from "@/assets/hero-edilson.png";
+import experienciaImage from "@/assets/experiencia-sonora.png";
 const nav = [{
   href: "#ingressos",
   label: "Ingressos"
@@ -306,7 +307,13 @@ export default function ShowNegroidePage() {
               </div>
             </div>
 
-            
+            <div className="flex justify-center">
+              <img 
+                src={experienciaImage} 
+                alt="Show Negróide em apresentação ao vivo" 
+                className="rounded-lg shadow-lg max-w-full h-auto"
+              />
+            </div>
           </motion.div>
         </div>
       </section>
