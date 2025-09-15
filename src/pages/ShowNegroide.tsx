@@ -447,18 +447,9 @@ export default function ShowNegroidePage() {
                   <CardTitle>Entre em Contato</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div>
-                    <label className="text-sm font-medium">Nome</label>
-                    <input type="text" className="w-full mt-1 px-3 py-2 bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Seu nome completo" />
-                  </div>
-                  <div>
-                    <label className="text-sm font-medium">Email</label>
-                    <input type="email" className="w-full mt-1 px-3 py-2 bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary" placeholder="seu@email.com" />
-                  </div>
-                  <div>
-                    <label className="text-sm font-medium">Mensagem</label>
-                    <textarea rows={4} className="w-full mt-1 px-3 py-2 bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary resize-none" placeholder="Sua mensagem..." />
-                  </div>
+                  
+                  
+                  
                   <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
                     <Mail className="mr-2 h-4 w-4" />
                     Enviar Mensagem
