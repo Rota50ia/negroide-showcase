@@ -447,9 +447,11 @@ export default function ShowNegroidePage() {
                 <CardTitle className="text-lg">Release Edilson Morais</CardTitle>
               </CardHeader>
               <CardContent>
-                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                  <ExternalLink className="mr-2 h-4 w-4" />
-                  Download
+                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground" asChild>
+                  <a href="https://drive.google.com/file/d/1laXyfGGx3allybPL2QIuXCnNvumiRyJm/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="mr-2 h-4 w-4" />
+                    Download
+                  </a>
                 </Button>
               </CardContent>
             </Card>
@@ -473,9 +475,11 @@ export default function ShowNegroidePage() {
                 <CardTitle className="text-lg">Negróide Foto 1</CardTitle>
               </CardHeader>
               <CardContent>
-                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                  <ExternalLink className="mr-2 h-4 w-4" />
-                  Download
+                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground" asChild>
+                  <a href="https://drive.google.com/file/d/1Pli_W5Q6RlslScvRZMTufHN0VJP8lyda/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="mr-2 h-4 w-4" />
+                    Download
+                  </a>
                 </Button>
               </CardContent>
             </Card>
@@ -499,9 +503,11 @@ export default function ShowNegroidePage() {
                 <CardTitle className="text-lg">Negróide Foto 2</CardTitle>
               </CardHeader>
               <CardContent>
-                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                  <ExternalLink className="mr-2 h-4 w-4" />
-                  Download
+                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground" asChild>
+                  <a href="https://drive.google.com/file/d/1Y1LyEYdOSzRjdAuF1JmoJmZ6vBvw4J-h/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="mr-2 h-4 w-4" />
+                    Download
+                  </a>
                 </Button>
               </CardContent>
             </Card>
@@ -525,9 +531,11 @@ export default function ShowNegroidePage() {
                 <CardTitle className="text-lg">Negróide Foto 3</CardTitle>
               </CardHeader>
               <CardContent>
-                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                  <ExternalLink className="mr-2 h-4 w-4" />
-                  Download
+                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground" asChild>
+                  <a href="https://drive.google.com/file/d/11-UOCI7BRAXlzVKNT7Nb6cPOfDEAAHZ0/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="mr-2 h-4 w-4" />
+                    Download
+                  </a>
                 </Button>
               </CardContent>
             </Card>
