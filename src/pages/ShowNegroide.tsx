@@ -11,6 +11,7 @@ import luizChaffinPhoto from "@/assets/luiz-chaffin-new.jpg";
 import luizClimacoPhoto from "@/assets/luiz-climaco.jpg";
 import heroImage from "@/assets/hero-edilson.png";
 import experienciaImage from "@/assets/experiencia-sonora.png";
+import edilsonSobreImage from "@/assets/edilson-sobre.png";
 const nav = [{
   href: "#ingressos",
   label: "Ingressos"
@@ -223,8 +224,52 @@ export default function ShowNegroidePage() {
         </div>
       </section>
 
-      {/* Ingressos */}
-      
+      {/* Sobre Edilson Morais */}
+      <section id="sobre-edilson" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24">
+        <motion.div 
+          initial={{ opacity: 0, y: 50 }} 
+          whileInView={{ opacity: 1, y: 0 }} 
+          viewport={{ once: true }} 
+          className="grid lg:grid-cols-2 gap-16 items-center"
+        >
+          <div className="flex justify-center lg:order-2">
+            <img 
+              src={edilsonSobreImage} 
+              alt="Edilson Morais tocando percussão em apresentação ao vivo" 
+              className="rounded-lg shadow-lg max-w-full h-auto"
+            />
+          </div>
+          
+          <div className="lg:order-1">
+            <h2 className="text-4xl font-bold mb-6">Sobre Edilson Morais</h2>
+            <div className="space-y-6 text-lg text-muted-foreground">
+              <p>
+                Edilson Morais é percussionista goiano. Sua trajetória inclui turnês por mais de 20 países, 
+                gravações para cinema e teatro, além de colaborações com importantes nomes da música brasileira.
+              </p>
+              <p>
+                Formado no Centro Cultural Gustav Ritter e com estudos em percussão erudita, música indiana, 
+                ritmos do leste europeu e candombe uruguaio, Edilson construiu uma linguagem musical única, 
+                que une tradição e inovação.
+              </p>
+              <p>
+                Ao longo da carreira, participou de festivais como o Vienna Jazz Festival, Hannover Expo 2000 
+                e Cumbre Tajín, e integrou projetos como Grupo Solo Brasil, Trio Mercosür Electropercusión, 
+                Goyá Eletro Duo e Com a Corda Toda. Gravou os DVDs Negróide (2013) e Percussão: Uma Outra Visão (2017), 
+                ambos aclamados pela crítica.
+              </p>
+              <p>
+                Nos últimos anos, destacou-se em turnês educativas, como o Educanto, que percorreu dezenas 
+                de cidades goianas, e na direção do Show Negróide, apresentado em festivais de grande relevância.
+              </p>
+              <p>
+                Edilson segue atuando como instrumentista, educador e diretor musical, consolidando-se como 
+                referência da percussão contemporânea e das raízes afro-brasileiras.
+              </p>
+            </div>
+          </div>
+        </motion.div>
+      </section>
 
       {/* Sobre */}
       <section id="sobre" className="surface-elevated">
